@@ -1,0 +1,93 @@
+@import "_mixin";
+// variables
+
+
+$roboto: 'Roboto', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
+$rojo: #AD1102;
+$color_vino: #79040A;
+$gris: #6D6E70;
+$gris_oscuro: #313332;
+$gris_claro: #efefef;
+$anarillo: #FFFF8C;
+
+//reset
+
+body *{
+    font-family: $Montserrat;
+    color: $gris_oscuro;
+    max-height: 999999px;
+}
+
+body, html {
+    margin:0;
+    padding:0;
+    background: #333;
+    font-size: 100%;
+    @media only screen and (max-width:960px){
+        font-size: 91.15%;
+    }
+    @media only screen and (max-width:465px){
+        font-size: 87.5%;
+    }
+}
+a img{border:none; outline: none}
+a{text-decoration:none; outline:0; border:none;}
+form{margin:0; padding:0}
+
+.cuerpo{
+    margin:0 auto;
+    width:1024px;
+    max-width: 100%;
+    background: #FFF;
+    position: relative;
+}
+
+.floati{float:left;}
+.floatd{float:right;}
+.separador{clear:both;height:0px; overflow:hidden}
+.separadorv{clear:both;height:10px; font-size:1px;}
+
+//
+
+
+.noenpc{display: none;}
+@media only screen and (max-width:640px){
+	.noenpc{display: block;}
+	.noenmobile{display: none;}
+}
+
+a{
+    @include transition(color 500ms, background-color 500ms);
+}
+a.aumentar{
+    @include transition(background-size 100ms);
+}
+//--- mixin particulares
+.botones{
+    display: inline-block;
+    width: 6.25rem;
+    height: 2rem;
+    background: $gris;
+    @include rounded-corners(5px);
+    text-align: center;
+    line-height: 2rem;
+    font-size: 0.8125rem;
+    font-weight: bold;
+    color: #fff;
+    &:hover{
+        background: $rojo;
+    }
+}
+
+
+
+@import "layout";
+@import "home";
+@import "productos";
+
+
+.has-error{
+    color: $color_vino!important;
+    font-weight: bold!important;
+}
