@@ -29,64 +29,11 @@
 <body>
     <div class="cuerpo">
         <header>
-            <a href="{{ route('home') }}" class="logo">Labtest</a>
-            <div class="menu">
-                    <div class="menu1">
-                        <div class="infocontacto">
-                            <a href="{{ route('aboutus') }}#contactus">CONTACT US</a>
-                            <span>Se habla español</span>
-                        </div>
-                        <form action="" method="get">
-                            <input type="text" placeholder="search text">
-                            <button></button>
-                        </form>
-                        <a href="{{ route('login') }}" class="botones">Log in</a>
-                        <a href="{{ route('register') }}" class="botones">Regist</a>
-                        <a href="" class="carrito"><img src="img/shopping-cart.svg" alt=""></a>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="{{ route('home') }}">HOME</a></li>
-                            <li><a href="{{ route('howitworks') }}">HOW IT WORKS</a></li>
-                            <li><a href="{{ route('category') }}">CATEGORIES</a></li>
-                            <li><a href="">INDIVIDUAL TESTS</a></li>
-                            <li><a href="{{ route('locator') }}">LOCATIONS</a></li>
-                            <li><a href="">BLOOD DRAW AT HOME</a></li>
-                            <li><a href="{{ route('aboutus') }}">ABOUT US</a></li>
-                        </ul>
-                    </nav>
-            </div>
+            cabecera
         </header>
     @yield('content')
     <footer>
-        <ul>
-            <li class="logo_diapo">
-                <img src="img/logo_diapo.svg">
-            </li>
-            <li>
-                <br>
-                <ul>
-                    <li><a href="{{ route('faq') }}">FAQ's</a></li>
-                    <li><a href="{{ route('terms_and_conditions') }}">Terms and Conditions</a></li>
-                    <li><a href="{{ route('privacypolicy') }}">Privacy and Security</a></li>
-                    <li><a href="{{ route('payment_options') }}">Payment Options</a></li>
-                    <li><a href="{{ route('refund_policy') }}">Refund Policy</a></li>
-                    <li><a href="{{ route('why_ltod') }}">Why Ltod</a></li>
-                </ul>
-            </li>
-            <li>
-                Get in Touch<br>
-                <ul class="ul_f_c">
-                    <li>
-                        Request A Test, Ltd<br> 
-                        7027 Mill Road, Suite 201<br> 
-                        Cleveland, OH 44141
-                    </li>
-                    <li>1-888-732-2348 <br>1-866-383-2766 (Español)</li>
-                    <li><a href="mailto:info@requestatest.com">info@requestatest.com</a></li>
-                </ul>
-            </li>
-        </ul>
+        pie
     </footer>
     </div>
 

@@ -18,33 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::get('category/', 'PanelController@category')->name('category');
-Route::get('test/', 'PanelController@test')->name('test');
-
-Route::get('/about-us', 'HomeController@aboutus')->name('aboutus');
-Route::get('/faq', 'HomeController@faq')->name('faq');
-Route::get('/how-it-works', 'HomeController@howitworks')->name('howitworks');
-Route::get('/privacy-policy', 'HomeController@privacypolicy')->name('privacypolicy');
-Route::get('/locator', 'HomeController@locator')->name('locator');
-Route::get('/payment-options', 'HomeController@payment_options')->name('payment_options');
-Route::get('/terms-and-conditions', 'HomeController@terms_and_conditions')->name('terms_and_conditions');
-Route::get('/refund-policy', 'HomeController@refund_policy')->name('refund_policy');
-Route::get('/why-ltod', 'HomeController@why_ltod')->name('why_ltod');
-
-
-Route::get('/checkout', 'AuthorizeController@index');
-Route::post('/checkout', 'AuthorizeController@chargeCreditCard');
-
-
-
-
-Route::get('/testpwn', 'HomeController@testpwn')->name('testpwn');
-
-Route::get('/test_types', 'TestController@test_types')->name('test_types');
-Route::get('/test_groups', 'TestController@test_groups')->name('test_groups');
-
-Route::get('/test_labs', 'LabController@test_labs')->name('test_labs');
-
 
 
 

@@ -4,12 +4,8 @@
 
 $roboto: 'Roboto', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
-$rojo: #AD1102;
-$color_vino: #79040A;
-$gris: #6D6E70;
+$azul: #001489;
 $gris_oscuro: #313332;
-$gris_claro: #efefef;
-$anarillo: #FFFF8C;
 
 //reset
 
@@ -64,30 +60,11 @@ a.aumentar{
     @include transition(background-size 100ms);
 }
 //--- mixin particulares
-.botones{
-    display: inline-block;
-    width: 6.25rem;
-    height: 2rem;
-    background: $gris;
-    @include rounded-corners(5px);
-    text-align: center;
-    line-height: 2rem;
-    font-size: 0.8125rem;
-    font-weight: bold;
-    color: #fff;
-    &:hover{
-        background: $rojo;
-    }
+img{
+	max-width: 100%;
 }
 
 
 
 @import "layout";
 @import "home";
-@import "productos";
-
-
-.has-error{
-    color: $color_vino!important;
-    font-weight: bold!important;
-}
